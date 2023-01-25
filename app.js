@@ -1,10 +1,10 @@
-import { strictEquals } from "./strictEquals";
+import { strictEquals } from "./strictEquals.js";
 
-console.log(strictEquals(1, 1));
-console.log(strictEquals(NaN, NaN));
-console.log(strictEquals(0, -0));
-console.log(strictEquals(-0, 0));
-console.log(strictEquals(1, "1"));
-console.log(strictEquals(true, false));
-console.log(strictEquals(false, false));
-console.log(strictEquals("water", "oil"));
+console.log(strictEquals(1, 1)); // True
+console.log(strictEquals(NaN, NaN)); // False
+console.log(strictEquals(0, -0)); // True
+console.log(strictEquals(-0, 0)); // True
+console.log(strictEquals(1, "1")); // False
+console.log(strictEquals(true, false)); // False
+console.log(strictEquals(false, false)); // True
+console.log(strictEquals("water", "oil")); // False
