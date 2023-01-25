@@ -13,4 +13,4 @@ NaN NaN false // Rule Exception
 1 ‘1’ false
 true false false
 false false true
-‘Water’ ‘oil’ fals
+‘Water’ ‘oil’ false

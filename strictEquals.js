@@ -1,7 +1,4 @@
-export function strictEquals(a, b) {
-  if (Object.is(a, b)) {
-    if (Object.is(a, NaN)) {
-      return false;
-    }
-  }
-}
+export const strictEquals = (a, b) => {
+  if (Object.is(a, NaN)) return false;
+  if (!a && !b) return true;
+};
